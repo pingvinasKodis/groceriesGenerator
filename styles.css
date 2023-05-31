@@ -1,0 +1,136 @@
+html {
+	display: block;
+	box-sizing: border-box;
+	-webkit-text-size-adjust: 100%;
+}
+.display-none {
+	display: none;
+}
+
+/* Navbar */
+
+nav {
+	background-color: beige;
+	border-bottom: 2px solid rgb(186, 186, 156);
+	padding-left: 24px;
+	padding-right: 24px;
+}
+nav > div {
+	max-width: 1092px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+nav ul {
+	display: flex;
+	flex-direction: row;
+	gap: 24px;
+	padding-inline-start: 0;
+}
+nav li {
+	list-style: none;
+}
+nav li a,
+nav li a:visited {
+	font-size: 18px;
+	color: darkblue;
+	font-weight: bold;
+	text-decoration: none;
+}
+nav li a:hover {
+	color: blue;
+}
+
+/* End of navbar */
+
+/* Body, header, sections, footer */
+
+body {
+	margin: 0;
+}
+
+header,
+main {
+	max-width: 1092px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+/* End of body, header, sections, footer*/
+
+/* Dishes list */
+.dishes-list {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 24px;
+}
+.dishes-list .dish-card {
+	background: #ffffff 0% 0% no-repeat padding-box;
+	box-shadow: 0px 1px 3px #172e6226;
+	border-radius: 8px;
+	padding: 24px;
+	position: relative;
+	transition: 150ms ease-in-out;
+}
+
+.dishes-list .dish-card:hover {
+	box-shadow: 0px 5px 10px #172e6226;
+	cursor: pointer;
+}
+.dishes-list .dish-card img {
+	width: 100%;
+	border-radius: 8px;
+}
+.dishes-list .dish-card h3 {
+	margin-bottom: 0;
+}
+.dishes-list .dish-card a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+/* End of dishes list */
+
+@media only screen and (min-width: 768px) {
+	/* Navbar */
+	nav {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	/* End of navbar */
+
+	/* Body, header, sections, footer */
+	header,
+	main {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	/* End of body, header, sections, footer */
+
+	/* Dishes list */
+	.dishes-list {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 24px;
+	}
+	.dishes-list .dish-card {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.dishes-list .dish-card img {
+		width: 100%;
+		border-radius: 8px;
+		display: block;
+	}
+	.dishes-list .dish-card h3 {
+		margin-bottom: 0;
+
+		padding-left: 24px;
+	}
+	/* End of dishes list */
+}
