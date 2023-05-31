@@ -1,0 +1,43 @@
+[
+	{
+		"id": 1,
+		"name": "Žalioji šakšuka su špinatais",
+		"photo": "media\\zalia-saksuka-su-spinatais.jpg",
+		"link": "https://www.lamaistas.lt/receptas/zalioji-saksuka-su-spinatais-63433",
+		"country": "Izraelis",
+		"ingredients": [
+			"Špinatai 100g",
+			"Kiaušiniai 4vnt.",
+			"Cukinija 1vnt.",
+			"Žalioji paprika 1vnt.",
+			"Žalieji žirneliai 2 saujos",
+			"Česnakas 3 skilt.",
+			"Žalioji citrina 0.5vnt.",
+			"Imbieras 1 gabalėlis(2-3cm)",
+			"Svogūnų laiškai 1 saujalė",
+			"Kuminas",
+			"Kalendra",
+			"Druska",
+			"Aliejaus 1 šaukštas"
+		],
+		"haveMeat": false
+	},
+	{
+		"id": 1,
+		"name": "Vienos šnicelis",
+		"photo": "media\\vienos-snicelis.jpg",
+		"link": "receptai\\vienos-snicelis-receptas.jpg",
+		"country": "Austrija",
+		"ingredients": [
+			"Veršienos pjausniai 4vnt. (po 150-180g)",
+			"Druska 0.5 šaukšelio",
+			"Malti juodieji pipirai 0.5 šaukštelio",
+			"Miltai 100g",
+			"Džiūvesėliai 100g",
+			"Kiaušiniai 2vnt.",
+			"Aliejus 200ml",
+			"Citrina 1vnt."
+		],
+		"haveMeat": true
+	}
+]
