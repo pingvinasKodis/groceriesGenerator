@@ -69,3 +69,11 @@ function addIngredientsToGroceriesList(el) {
 		groceriesList.innerHTML += allListItems;
 	}
 }
+
+function clearList() {
+	groceriesList.innerHTML = "";
+	let dataPressedElements = document.querySelectorAll("[data-pressed]");
+	dataPressedElements.forEach((el) => {
+		el.setAttribute("data-pressed", "0");
+	});
+}
