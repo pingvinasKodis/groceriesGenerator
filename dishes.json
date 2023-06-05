@@ -1,6 +1,6 @@
 [
 	{
-		"id": 1,
+		"id": 0,
 		"name": "Žalioji šakšuka su špinatais",
 		"photo": "media\\zalia-saksuka-su-spinatais.jpg",
 		"link": "https://www.lamaistas.lt/receptas/zalioji-saksuka-su-spinatais-63433",
@@ -37,6 +37,32 @@
 			"Kiaušiniai 2vnt.",
 			"Aliejus 200ml",
 			"Citrina 1vnt."
+		],
+		"haveMeat": true
+	},
+	{
+		"id": 2,
+		"name": "Azijietiška vištiena su anakardžiais",
+		"photo": "media\\azijietiska-vistiena-su-anakardziais.jpg",
+		"link": "https://antmedineslenteles.com/2023/01/04/azijietiska-vistiena-su-anakardziais/",
+		"country": "Azija",
+		"ingredients": [
+			"Vištienos šlaunelių mėsa arba krūtinėlės filė 400g",
+			"Druska, pipirai",
+			"Raudonoji paprika 1vnt.",
+			"Šparaginės pupelės / Brokoliai / Žirnių ankščiai 100g",
+			"Imbiero šaknis 2cm",
+			"Česnakas 3sklt.",
+			"Anakardžių riešutai 1 sauja",
+			"Aliejus (kepimui)",
+			"Sezamo sėklos (patiekimui)",
+			"Vištienos sultinys / vanduo 100ml",
+			"Sumažinto sūrumo sojos padažas 50ml",
+			"Austrių padažas 2 v.š.",
+			"Cukrus / medus 2 v.š.",
+			"Skrudintų sezamų aliejus 1 v.š.",
+			"Laimo / citrinų sultys 1 v.š.",
+			"Kukurūzų krakmolas 1 a.š."
 		],
 		"haveMeat": true
 	}

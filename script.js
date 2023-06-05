@@ -26,13 +26,17 @@ function fetchAllDishes() {
 
 				let dishCard = document.createElement("div");
 				dishCard.classList.add("dish-card");
-				dishCard.setAttribute("onclick", "addIngredientsToGroceriesList(this)");
 				dishCard.setAttribute("data-pressed", "0");
 
 				let dishLink = document.createElement("a");
 				dishLink.setAttribute("href", dish.link);
 				dishLink.setAttribute("target", "_blank");
-				dishLink.innerHTML = "&nbsp;";
+				dishLink.innerHTML = "Receptas";
+
+				let addIngredientsButton = document.createElement("a");
+				addIngredientsButton.setAttribute("onclick", "addIngredientsToGroceriesList(this)");
+				addIngredientsButton.setAttribute("href", "javascript:void(0)");
+				addIngredientsButton.innerHTML = "Pridėti į sąrašą";
 
 				let dishPhoto = document.createElement("img");
 				dishPhoto.setAttribute("src", dish.photo);
@@ -43,29 +47,29 @@ function fetchAllDishes() {
 				let dishIngredients = document.createElement("ul");
 				dishIngredients.classList.add("display-none");
 
-				dishCard.appendChild(dishPhoto);
-				dishCard.appendChild(dishName);
-				// This line make dish card as a link
-				// dishCard.appendChild(dishLink);
-
-				dishesList.appendChild(dishCard);
-
 				for (let j = 0; j < dish.ingredients.length; j++) {
 					let groceriesListItem = document.createElement("li");
 					groceriesListItem.innerHTML = dish.ingredients[j];
 					dishIngredients.appendChild(groceriesListItem);
 				}
 
+				dishCard.appendChild(dishPhoto);
+				dishCard.appendChild(dishName);
+				dishCard.appendChild(dishLink);
+				dishCard.appendChild(addIngredientsButton);
 				dishCard.appendChild(dishIngredients);
+
+				dishesList.appendChild(dishCard);
 			}
 		});
 }
 
 function addIngredientsToGroceriesList(el) {
-	let dataPressed = Number(el.getAttribute("data-pressed"));
+	let parent = el.closest(".dish-card");
+	let dataPressed = Number(parent.getAttribute("data-pressed"));
 	if (dataPressed === 0) {
-		el.setAttribute("data-pressed", "1");
-		let allListItems = el.querySelector(".display-none").innerHTML;
+		parent.setAttribute("data-pressed", "1");
+		let allListItems = parent.querySelector(".display-none").innerHTML;
 		groceriesList.innerHTML += allListItems;
 	}
 }
