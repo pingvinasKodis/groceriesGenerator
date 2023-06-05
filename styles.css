@@ -62,6 +62,9 @@ main {
 	padding-left: 24px;
 	padding-right: 24px;
 }
+main {
+	padding-bottom: 180px;
+}
 
 /* End of body, header, sections, footer*/
 
@@ -127,6 +130,25 @@ main {
 	position: absolute;
 	right: 20px;
 	bottom: 20px;
+}
+.groceries form {
+	margin-top: 24px;
+}
+.groceries form label {
+	display: block;
+	margin-bottom: 8px;
+}
+.groceries form label:nth-child(2n) {
+	background-color: #f7f7f7;
+}
+.groceries form label input {
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+	margin-right: 8px;
+}
+.groceries form label input:hover {
+	cursor: pointer;
 }
 /* End of dishes list */
 

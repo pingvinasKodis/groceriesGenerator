@@ -1,5 +1,5 @@
 let dishesList = document.querySelector(".dishes-list");
-let groceriesList = document.querySelector(".groceries ul");
+let groceriesList = document.querySelector(".groceries form");
 
 fetchAllDishes();
 
@@ -53,13 +53,24 @@ function fetchAllDishes() {
 					haveMeatLogo.classList.add("display-none");
 				}
 
-				let dishIngredients = document.createElement("ul");
+				let dishIngredients = document.createElement("form");
 				dishIngredients.classList.add("display-none-ingredients");
 
 				for (let j = 0; j < dish.ingredients.length; j++) {
-					let groceriesListItem = document.createElement("li");
-					groceriesListItem.innerHTML = dish.ingredients[j];
-					dishIngredients.appendChild(groceriesListItem);
+					let groceriesListItem = document.createElement("input");
+					groceriesListItem.setAttribute("type", "checkbox");
+					groceriesListItem.setAttribute("id", `ingredient-${j}`);
+					groceriesListItem.setAttribute("name", `ingredient-${j}`);
+					groceriesListItem.setAttribute("value", `${j}`);
+
+					let groceriesListItemLabel = document.createElement("label");
+					groceriesListItemLabel.setAttribute("for", `ingredient-${j}`);
+
+					groceriesListItemLabel.appendChild(groceriesListItem);
+
+					groceriesListItemLabel.innerHTML += dish.ingredients[j];
+
+					dishIngredients.appendChild(groceriesListItemLabel);
 				}
 
 				dishCard.appendChild(dishPhoto);
