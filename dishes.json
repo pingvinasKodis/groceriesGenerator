@@ -65,5 +65,29 @@
 			"Kukurūzų krakmolas 1 a.š."
 		],
 		"haveMeat": true
+	},
+	{
+		"id": 3,
+		"name": "Pupelių ir kukurūzų salotos su feta",
+		"photo": "media\\pupeliu-ir-kukuruzu-salotos-su-feta.jpg",
+		"link": "https://antmedineslenteles.com/2023/05/12/pupeliu-ir-kukuruzu-salotos-su-feta/",
+		"country": "Graikija",
+		"ingredients": [
+			"Juodujų pupelių 1 skardinė 400g",
+			"Konservuoti kukurūzai 1 skardinė 340g",
+			"Avokadas 2vnt.",
+			"Pomidoras 2-4vnt.",
+			"Raudonasis svogūnas 1vnt.",
+			"Feta 150g",
+			"Sauja mėgstamų žolelių (Kalendra, česnakų laiškai ir t.t.)",
+			"Druska, pipirai",
+			"Alyvuogių aliejus 4 v.š.",
+			"Raudonojo vyno actas 1 v.š.",
+			"Medus 1 v.š.",
+			"Citrinos / laimo sultys 1 v.š.",
+			"Česnakinė druska",
+			"Žolelių ir česnako mišinys"
+		],
+		"haveMeat": false
 	}
 ]

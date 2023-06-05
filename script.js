@@ -23,6 +23,7 @@ function fetchAllDishes() {
 				dish.photo = data[i].photo;
 				dish.link = data[i].link;
 				dish.ingredients = data[i].ingredients;
+				dish.haveMeat = data[i].haveMeat;
 
 				let dishCard = document.createElement("div");
 				dishCard.classList.add("dish-card");
@@ -44,8 +45,16 @@ function fetchAllDishes() {
 				let dishName = document.createElement("h3");
 				dishName.innerHTML = dish.name;
 
+				let haveMeatLogo = document.createElement("img");
+				haveMeatLogo.setAttribute("src", "media\\no_meat_icon_134822.png");
+				haveMeatLogo.classList.add("have-meat-logo");
+
+				if (dish.haveMeat === true) {
+					haveMeatLogo.classList.add("display-none");
+				}
+
 				let dishIngredients = document.createElement("ul");
-				dishIngredients.classList.add("display-none");
+				dishIngredients.classList.add("display-none-ingredients");
 
 				for (let j = 0; j < dish.ingredients.length; j++) {
 					let groceriesListItem = document.createElement("li");
@@ -58,6 +67,7 @@ function fetchAllDishes() {
 				dishCard.appendChild(dishLink);
 				dishCard.appendChild(addIngredientsButton);
 				dishCard.appendChild(dishIngredients);
+				dishCard.appendChild(haveMeatLogo);
 
 				dishesList.appendChild(dishCard);
 			}
@@ -69,7 +79,7 @@ function addIngredientsToGroceriesList(el) {
 	let dataPressed = Number(parent.getAttribute("data-pressed"));
 	if (dataPressed === 0) {
 		parent.setAttribute("data-pressed", "1");
-		let allListItems = parent.querySelector(".display-none").innerHTML;
+		let allListItems = parent.querySelector(".display-none-ingredients").innerHTML;
 		groceriesList.innerHTML += allListItems;
 	}
 }
