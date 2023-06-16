@@ -1,5 +1,13 @@
 let dishesList = document.querySelector(".dishes-list");
 let groceriesList = document.querySelector(".groceries form");
+let burgerIcon = document.querySelector(".burger-icon");
+
+burgerIcon.addEventListener('click', function(){
+	let mobileMenu = document.querySelector(".mobile-menu");
+	mobileMenu.classList.toggle("display-none");
+});
+
+
 
 fetchAllDishes();
 
@@ -13,6 +21,8 @@ function fetchAllDishes() {
 		ingredients: [],
 		haveMeat: false,
 	};
+
+	let k = 0;
 
 	fetch("dishes.json")
 		.then((results) => results.json())
@@ -56,15 +66,14 @@ function fetchAllDishes() {
 				let dishIngredients = document.createElement("form");
 				dishIngredients.classList.add("display-none-ingredients");
 
-				for (let j = 0; j < dish.ingredients.length; j++) {
+				for (let j = 0; j < dish.ingredients.length; j++, k++) {
 					let groceriesListItem = document.createElement("input");
 					groceriesListItem.setAttribute("type", "checkbox");
-					groceriesListItem.setAttribute("id", `ingredient-${j}`);
-					groceriesListItem.setAttribute("name", `ingredient-${j}`);
-					groceriesListItem.setAttribute("value", `${j}`);
+					groceriesListItem.setAttribute("id", `ingredient-${k}`);
+					
 
 					let groceriesListItemLabel = document.createElement("label");
-					groceriesListItemLabel.setAttribute("for", `ingredient-${j}`);
+					groceriesListItemLabel.setAttribute("for", `ingredient-${k}`);
 
 					groceriesListItemLabel.appendChild(groceriesListItem);
 
@@ -93,6 +102,19 @@ function addIngredientsToGroceriesList(el) {
 		let allListItems = parent.querySelector(".display-none-ingredients").innerHTML;
 		groceriesList.innerHTML += allListItems;
 	}
+
+	let groceriesListInputs = document.querySelectorAll(".groceries form input");
+
+console.log(groceriesListInputs);
+
+groceriesListInputs.forEach(item => {
+	item.addEventListener('change', function() {
+		let parent = item.closest("label");
+		parent.classList.toggle("crossed");
+		console.log("toggling");
+	})
+})
+
 }
 
 function clearList() {

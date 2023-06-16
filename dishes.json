@@ -90,5 +90,49 @@
 			"Tortilla traškučiai"
 		],
 		"haveMeat": false
+	},{
+		"id": 4,
+		"name": "Naminiai dešrainiai",
+		"photo": "media\\desrainiai.jpg",
+		"link": "https://www.lamaistas.lt/receptas/naminiai-desrainiai-trigubai-skanu-45340",
+		"country": "Jungtinės amerikos valstijos",
+		"ingredients": [
+			"Bandelės dešrainiams 2 vnt.",
+			"Saloto 4 lapai",
+			"Dešrelės 2 vnt.",
+			"Agurkai 2 vnt.",
+			"Agurkai (marinuoti) 1 vnt.",
+			"Garstyčių 1 v.š.",
+			"Majonezas 2 v.š.",
+			"Česnakas 2 skilt.",
+			"Jogurtas (Natūralus) 2 v.š.",
+			"Pomidorai 1 vnt.",
+			"Pomidorų padažas šiek tiek"
+		],
+		"haveMeat": true
+	},{
+		"id": 5,
+		"name": "Kugelis",
+		"photo": "media\\kugelis.jpg",
+		"link": "https://www.beatosvirtuve.lt/receptai/skaniausias-klasikinis-kugelis-pagal-ruta/",
+		"country": "Lietuva",
+		"ingredients": [
+			"Bulvės 3kg",
+			"Svogūnai 4 vnt. dideli",
+			"Kiaušiniai 5 vnt.",
+			"Druska 1 a.š.",
+			"Malti juodieji pipirai",
+			"Sviestas 180g",
+			"Grietinė 100g",
+			"Vitamino C tabletės 3-4 vnt.",
+			"Alyvuogių aliejus",
+			"Šviežia šoninė 400g","Šaltai rūkyta šoninė 250g", 
+			"Grietinėlė 200ml",
+			"Grietinė 100ml",
+			"Maltas muskatas",
+			"Malti gvazdikėliai",
+			"Malti baltieji pipirai"
+		],
+		"haveMeat": true
 	}
 ]

@@ -1,40 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Lengvai susidėkite savo pirkinių sąrašą | Paprasta apsipirkti</title>
-		<link rel="stylesheet" href="styles.css" />
-		<link rel="icon" type="image/x-icon" href="figma-logos/basic-logo.png" />
-	</head>
-	<body>
-		<nav>
-			<div>
-				<a href="index.html"><img src="figma-logos/extended-logo.png" alt="Paprasta apsipirkti logotipas"></a>
-				<ul class="main-links">
-					<li><a href="recipies.html">Receptai</a></li>
-					<li><a href="groceries.html">Pirkiniai</a></li>
-					<li><a href="about-us.html">Apie mus</a></li>
-				</ul>
-				<ul class="side-links">
-					<li><a href="duk.html">DUK</a></li>
-				</ul>
-				
-			</div>
-		</nav>
 
-		<header>
-			<h1>Generate your groceries with ease</h1>
-		</header>
-		<main>
-			<section class="dishes-list"></section>
-			<section class="groceries">
-				<h2>Groceries list:</h2>
-				<button onclick="clearList()">Clear list</button>
-				<form></form>
-			</section>
-		</main>
-		<script src="script.js"></script>
-	</body>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Lengvai susidėkite savo pirkinių sąrašą | Paprasta apsipirkti</title>
+	<link rel="stylesheet" href="styles.css" />
+	<link rel="icon" type="image/x-icon" href="figma-logos/basic-logo.png" />
+</head>
+
+<body>
+	<nav>
+		<div class="desktop-menu">
+			<a href="index.html"><img src="figma-logos/extended-logo.png" alt="Paprasta apsipirkti logotipas"></a>
+			<ul class="main-links">
+				<li><a href="recipies.html">Receptai</a></li>
+				<li><a href="groceries.html">Pirkiniai</a></li>
+				<li><a href="about-us.html">Apie mus</a></li>
+			</ul>
+			<ul class="side-links">
+				<li><a href="duk.html">DUK</a></li>
+			</ul>
+
+		</div>
+
+		<a class="mobile-menu-homepage" href="index.html"><img src="figma-logos/basic-logo.png"
+				alt="Paprasta apsipirkti logotipas"></a>
+		<img class="burger-icon" src="media/hamburger-menu-icon.png" alt="burgerio ikona">
+
+		<div class="mobile-menu display-none">
+
+			<ul class="main-links">
+				<li><a href="recipies.html">Receptai</a></li>
+				<li><a href="groceries.html">Pirkiniai</a></li>
+				<li><a href="about-us.html">Apie mus</a></li>
+				<li><a href="duk.html">DUK</a></li>
+			</ul>
+
+
+		</div>
+
+	</nav>
+
+	<header>
+		<div class="left-header-text-wrapper">
+			<h1>Dažniausiai užduodami klausimai</h1>
+
+		</div>
+
+		<div class="right-image-wrapper"><img src="media/faq.png" alt="Salotos lėkštėje"></div>
+
+	</header>
+	<main>
+		<section>
+			<h3>Klausimas 1</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nisi illo animi, nostrum atque
+				praesentium similique veritatis at nihil quod doloribus omnis itaque quisquam tenetur veniam sequi
+				ratione quidem odit aut odio cupiditate, alias eaque qui molestiae. Magnam, distinctio cumque.</p>
+			<h3>Klausimas 2</h3>
+			<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias expedita exercitationem quasi
+				aspernatur eveniet delectus nam officiis tempore reprehenderit at.</p>
+			<h3>Klausimas 3</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, itaque.<br /><br />Lorem ipsum, dolor
+				sit amet consectetur adipisicing elit. Delectus quisquam quos veritatis nihil corrupti nam consequatur
+				perferendis blanditiis sapiente assumenda, possimus saepe ad nobis maiores eligendi voluptates omnis
+				doloribus nostrum.</p>
+			<h3>Klausimas 4</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nisi illo animi, nostrum atque
+				praesentium similique veritatis at nihil quod doloribus omnis itaque quisquam tenetur veniam sequi
+				ratione quidem odit aut odio cupiditate, alias eaque qui molestiae. Magnam, distinctio cumque.</p>
+			<h3>Klausimas 5</h3>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nisi illo animi, nostrum atque
+				praesentium similique veritatis at nihil quod doloribus omnis itaque quisquam tenetur veniam sequi
+				ratione quidem odit aut odio cupiditate, alias eaque qui molestiae. Magnam, distinctio cumque.</p>
+		</section>
+	</main>
+	<footer>
+		<ul>
+			<li>&#169; All rights reserved 2023</li>
+			<li><a href="kontaktai.html">Kontaktai</a></li>
+		</ul>
+	</footer>
+	<script src="script.js"></script>
+</body>
+
 </html>

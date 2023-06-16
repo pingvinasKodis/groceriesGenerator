@@ -10,7 +10,7 @@
 	</head>
 	<body>
 		<nav>
-			<div>
+			<div class="desktop-menu">
 				<a href="index.html"><img src="figma-logos/extended-logo.png" alt="Paprasta apsipirkti logotipas"></a>
 				<ul class="main-links">
 					<li><a href="recipies.html">Receptai</a></li>
@@ -20,21 +20,55 @@
 				<ul class="side-links">
 					<li><a href="duk.html">DUK</a></li>
 				</ul>
-				
+	
 			</div>
+	
+			<a class="mobile-menu-homepage" href="index.html"><img src="figma-logos/basic-logo.png" alt="Paprasta apsipirkti logotipas"></a>
+			<img class="burger-icon" src="media/hamburger-menu-icon.png" alt="burgerio ikona">
+	
+			<div class="mobile-menu display-none">
+				
+				<ul class="main-links">
+					<li><a href="recipies.html">Receptai</a></li>
+					<li><a href="groceries.html">Pirkiniai</a></li>
+					<li><a href="about-us.html">Apie mus</a></li>
+					<li><a href="duk.html">DUK</a></li>
+				</ul>
+			
+	
+			</div>
+	
 		</nav>
 
 		<header>
-			<h1>Generate your groceries with ease</h1>
+			<div class="left-header-text-wrapper">
+				<h1>Vos kelių mygtukų paspaudimais sugeneruosime pirkinių sąrašą</h1>
+				<ul>
+					<li>Suplanuokite savo pirkinius</li>
+					<li>Sudarykite pirkinių sąrašą</li>
+					<li>Patogiai apsipirkite internetu</li>
+				</ul>
+			</div>
+	
+			<div class="right-image-wrapper"><img src="media/man-in-groceries-store.png" alt="Salotos lėkštėje"></div>
+	
 		</header>
-		<main>
+		<main class="list-generation">
 			<section class="dishes-list"></section>
 			<section class="groceries">
-				<h2>Groceries list:</h2>
-				<button onclick="clearList()">Clear list</button>
+				<h2 class="section-title">Pirkinių sąrašas:</h2>
+				
 				<form></form>
+				<button class="clear-list" onclick="clearList()">Išvalyti sąrašą</button>
 			</section>
+	
 		</main>
+		<footer>
+			<ul>
+				<li>&#169; All rights reserved 2023</li>
+				<li><a href="kontaktai.html">Kontaktai</a></li>
+			</ul>
+		</footer>
 		<script src="script.js"></script>
 	</body>
 </html>
