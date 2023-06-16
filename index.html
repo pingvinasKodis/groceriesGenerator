@@ -1,37 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Easy groceries planner! | Smart groceries</title>
-		<link rel="stylesheet" href="styles.css" />
-		<link rel="icon" type="image/x-icon" href="media/groceries-basket-icon.png" />
-	</head>
-	<body>
-		<nav>
-			<div>
-				<ul class="main-links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about-us.html">About us</a></li>
-				</ul>
-				<ul class="side-links">
-					<li><a href="admin/add-dishes.html">Add dishes</a></li>
-				</ul>
-			</div>
-		</nav>
 
-		<header>
-			<h1>Generate your groceries with ease</h1>
-		</header>
-		<main>
-			<section class="dishes-list"></section>
-			<section class="groceries">
-				<h2>Groceries list:</h2>
-				<button onclick="clearList()">Clear list</button>
-				<form></form>
-			</section>
-		</main>
-		<script src="script.js"></script>
-	</body>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Lengvai susidėkite savo pirkinių sąrašą | Paprasta apsipirkti</title>
+	<link rel="stylesheet" href="styles.css" />
+	<link rel="icon" type="image/x-icon" href="figma-logos/basic-logo.png" />
+</head>
+
+<body>
+	<nav>
+		<div>
+			<a href="index.html"><img src="figma-logos/extended-logo.png" alt="Paprasta apsipirkti logotipas"></a>
+			<ul class="main-links">
+				<li><a href="recipies.html">Receptai</a></li>
+				<li><a href="groceries.html">Pirkiniai</a></li>
+				<li><a href="about-us.html">Apie mus</a></li>
+			</ul>
+			<ul class="side-links">
+				<li><a href="duk.html">DUK</a></li>
+			</ul>
+
+		</div>
+	</nav>
+
+	<header>
+		<div class="left-header-text-wrapper">
+			<h1>Susiplanuokite savaitės pirkinius ir patiekalus kaip niekada lengvai</h1>
+			<ul>
+				<li>Tarp daugybės receptų kiekvienas ras sau tinkamų patiekalų</li>
+				<li>Lengvai susigeneruosite pirkinių sąrašą</li>
+				<li>Atsakysime į visus jums rūpikus klausimus DUK skiltyje</li>
+			</ul>
+		</div>
+
+		<div class="right-image-wrapper"><img src="media/groceries-header-img.png" alt="Įvairios maistro prekės"></div>
+
+	</header>
+	<main>
+		<section class="web-functions">
+			<h2 class="section-title">Puslapio ypatumai ir funkcijos</h2>
+			<div>
+				<p>1</p>
+				<p>Receptų paieška mūsų receptų bibliotekoje</p><img width="140px" height="140px"
+					src="media/man-looking-for-something.png" alt="žmogus žiūrintis per žiūronus">
+
+			</div>
+			<div>
+				<p>2</p>
+				<p>Išmanaus pirkinio sąrašo sudarymas</p><img width="140px" height="140px" src="media/todolist.png"
+					alt="darbų sąrašas">
+
+			</div>
+			<div>
+				<p>3</p>
+				<p>Patogu gamintis naudojantis svetaine</p><img width="140px" height="140px"
+					src="media/cooking-in-a-pan.png" alt="maistas keptuvėje">
+
+			</div>
+			<div>
+				<p>4</p>
+				<p>Nuolatinis receptų pildymas ir platformos tobulinimas</p><img width="140px" height="140px"
+					src="media/maintenance.png" alt="darbininkas remontuotojas">
+
+			</div>
+		</section>
+
+	</main>
+	<footer>
+		<ul>
+			<li>&#169; All rights reserved 2023</li>
+			<li><a href="kontaktai.html
+				f">Kontaktai</a></li>
+		</ul>
+	</footer>
+	<script src="script.js"></script>
+</body>
+
 </html>
